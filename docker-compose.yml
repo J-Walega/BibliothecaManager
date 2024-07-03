@@ -1,0 +1,55 @@
+version: "3.4"
+
+services:
+  sql-server-db:
+    container_name: sql-server-db
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    environment:
+      SA_PASSWORD: "SA_Password123"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "21433:1433"
+    restart: unless-stopped
+    networks:
+      - webnet
+
+  api:
+    image: ${DOCKER_REGISTRY-}api
+    build:
+      context: .
+      dockerfile: src/Apps/BibliothecaManager.Api/Dockerfile
+    ports:
+      #- "5006:443"
+      - "5005:80"
+    environment:
+      #- ASPNETCORE_ENVIRONMENT=Development
+      #- ASPNETCORE_URLS=https://+:443;http://+:80
+      #- ASPNETCORE_HTTPS_PORT=5006
+      #- ASPNETCORE_Kestrel__Certificates__Default__Password=Password123
+      #- ASPNETCORE_Kestrel__Certificates__Default__Path=/https/bibliothecamanager.pfx
+      - "UseInMemoryDatabase=false"
+      - "ConnectionStrings__DefaultConnection=Server=sql-server-db;Database=BibliothecaManagerDb;User=sa;Password=SA_Password123;MultipleActiveResultSets=true"
+      - "IdentityServer__Key__Type=Development"
+    #volumes:
+    #- ./https/bibliothecamanager.pfx:/https/bibliothecamanager.pfx:ro
+    restart: on-failure
+    networks:
+      - webnet
+    depends_on:
+      - sql-server-db
+
+  clientapp:
+    image: ${DOCKER_REGISTRY-}clientapp
+    build:
+      context: .
+      dockerfile: src/Apps/web/ClientApp/Dockerfile
+    networks:
+      - webnet
+
+volumes:
+  data01:
+    driver: local
+
+networks:
+  webnet:
+    driver: bridge

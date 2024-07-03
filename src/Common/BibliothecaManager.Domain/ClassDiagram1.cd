@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BibliothecaManager.Domain.Common.AuditableEntity">
+    <Position X="13.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAgAAAAAAAAAAAEAABAAAAAAA=</HashCode>
+      <FileName>Common\AuditableEntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BibliothecaManager.Domain.Entities.LibraryEntities.Author">
+    <Position X="11.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAQAhAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\LibraryEntities\Author.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BibliothecaManager.Domain.Entities.LibraryEntities.Book">
+    <Position X="16.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAEAACAIAAACAAQBAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>Entities\LibraryEntities\Book.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BibliothecaManager.Domain.Entities.LibraryEntities.BookItem">
+    <Position X="11.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACCAABAAAAAABACAAAAAAAAAAAAEAAAAAAAAAAEAA=</HashCode>
+      <FileName>Entities\LibraryEntities\BookItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BibliothecaManager.Domain.Entities.LibraryEntities.BookItemStatus">
+    <Position X="16.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAEAAAACAAAAAAAAACAAAAAIAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\LibraryEntities\BookItemStatus.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BibliothecaManager.Domain.Entities.LibraryEntities.Borrow">
+    <Position X="13" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAACACEAAAAAAAAAAAAAAAiAAAAEIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\LibraryEntities\Borrow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BibliothecaManager.Domain.Entities.LibraryEntities.City">
+    <Position X="9.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAgAAAAAAAAAAAAAQAAAAAAAAAAAAAgAAAAAQ=</HashCode>
+      <FileName>Entities\LibraryEntities\City.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BibliothecaManager.Domain.Entities.LibraryEntities.Comment">
+    <Position X="14" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACCAAAAgAAAIhAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\LibraryEntities\Comment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BibliothecaManager.Domain.Entities.LibraryEntities.Genre">
+    <Position X="18" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>Entities\LibraryEntities\Genre.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BibliothecaManager.Domain.Entities.LibraryEntities.Library">
+    <Position X="14.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAABAAAAAAAIAAAAAASAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\LibraryEntities\Library.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BibliothecaManager.Domain.Entities.LibraryEntities.Publisher">
+    <Position X="9.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAQAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\LibraryEntities\Publisher.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

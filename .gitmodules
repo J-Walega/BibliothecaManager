@@ -1,0 +1,3 @@
+[submodule "src/Apps/web/BibliothecaClient"]
+	path = src/Apps/web/BibliothecaClient
+	url = git://github.com/J-Walega/BibliothecaClient.git
